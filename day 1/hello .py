@@ -1,0 +1,23 @@
+print("=" *40)
+print(" Welcomw to ai freelancer journey")
+print("="* 40)
+
+name=input("enter your name :")
+age=int(input("enter your age :"))
+college = input("enter your college: ")
+city=(input("enter your city :"))
+skills=(input("enter your skills :"))
+dreamcompany=(input("enter your dream company :"))
+dreamsalary=str(input("enter your dream salary  :"))
+
+print("\n-----PROFILE----")
+print(f"NAME    :{name}")
+print(f"Age   :{age}")
+print(f"College    :{college}")
+print(f"City   :{city}")
+print(f"Skills   :{skills}")
+print(f"Dream Company   :{dreamcompany}")
+print(f"Dream Salary  :{dreamsalary}")
+
+print("\nCongratualtions!")
+print("you completed your first Python program.")
