@@ -4,12 +4,12 @@ cursor=connection.cursor()
 
 courses=[
     (1,"BCA"),
-    (2,"BBI")
+    (2,"BBI"),
     (3,"BBA")
 ]
 
 cursor.executemany("""
-INSERT OR IGNORE IINTO courses (course_id, course _name)
+INSERT OR IGNORE INTO courses (course_id, course_name)
 VALUES(?,?)
 
 """,courses)
@@ -24,7 +24,7 @@ students=[
 cursor.executemany("""
 INSERT OR IGNORE INTO students
 (student_id,name,age,course_id,marks)
-VALUES(?,?,?,?)
+VALUES(?,?,?,?,?)
 """,students)
 
 connection.commit()
