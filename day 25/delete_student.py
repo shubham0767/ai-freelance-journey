@@ -26,3 +26,5 @@ except sqlite3.Error as error:
 
 finally:
     connection.close()
+
+    
